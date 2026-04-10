@@ -1,0 +1,110 @@
+.navbar {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px 0;
+    font-family: 'KellySlab', sans-serif;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.navbar__child {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.button {
+    padding: 14px 67px;
+    border: none;
+    background-color: transparent;
+    color: var(--contrast);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.button:hover {
+    color: var(--additional-gray);
+}
+
+.button__accent {
+    padding: 14px 52px;
+    border: none;
+    border-radius: 16px;
+    background-color: var(--accent-color);
+    color: var(--contrast);
+    cursor: pointer;
+    transition: background-color .3s, color .3s;
+}
+
+.button__accent:hover {
+    background-color: var(--contrast);
+    color: var(--accent-color);
+}
+
+.button__white {
+    padding: 14px 47px;
+    border: 1px solid var(--contrast);
+    border-radius: 16px;
+    background-color: transparent;
+    color: var(--contrast);
+    cursor: pointer;
+    transition: background-color .3s, border .3s;
+}
+
+.button__white:hover {
+    background-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
+@media (max-width: 1162px) {
+    .navbar {
+        justify-content: center;
+        gap: 6px;
+        font-size: 16px;
+    }
+    .button {
+        padding: 14px 47px;
+    }
+    .button__accent {
+        padding: 14px 32px;
+    }
+    .button__white {
+        padding: 14px 27px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        justify-content: space-between;
+    }
+    .burger {
+        display: flex;
+    }
+    .burger div {
+        display: block;
+        height: 2px;
+        width: 24px;
+        background-color: var(--contrast);
+    }
+    .button {
+        display: none;
+    }
+    .button__accent {
+        display: none;
+    }
+    .button__white {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+
+}

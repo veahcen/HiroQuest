@@ -1,0 +1,157 @@
+.roulette {
+    width: 50%;
+    border: 1px solid var(--additional-gray2);
+    border-radius: 16px;
+}
+
+.roulette__containerUp {
+    padding: 24px 24px 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.roulette__title {
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.roulette__subtitle {
+    color: var(--additional-gray);
+}
+
+.roulette__containerDown {
+    padding: 0 24px 24px 24px;
+}
+
+.roulette__spin {
+    position: relative;
+    height: 208px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    overflow: hidden;
+}
+
+.track {
+    display: flex;
+    gap: 4px;
+    width: max-content;
+    will-change: transform;
+}
+
+.roulette__text {
+    margin-top: 16px;
+}
+
+.roulette__days {
+    position: relative;
+    margin-top: 10px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid var(--additional-gray2);
+    border-radius: 16px;
+    font-size: 44px;
+    font-weight: 600;
+}
+
+.roulette__day:last-of-type {
+    position: relative;
+}
+
+.roulette__day:last-of-type::after {
+    content: '';
+    position: absolute;
+    left: -110%;
+    top: 10%;
+    z-index: -2;
+    width: 44px;
+    height: 44px;
+    background-image: url('../../assets/images/gift2.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.roulette__days__line {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    height: 16px;
+    background-color: var(--accent-color);
+}
+
+.roulette__union {
+    position: absolute;
+    bottom: 6px;
+    border: 1px solid var(--accent-color);
+    border-radius: 16px;
+    width: 121px;
+    height: 195px;
+}
+
+.roulette__union__image {
+    position: absolute;
+    bottom: -1px;
+    left: 40%;
+}
+
+.roulette__timeSt {
+    height: 84px;
+}
+
+.timer {
+    padding-left: 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.timeBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeDigits {
+    display: flex;
+    gap: 8px;
+    font-family: 'KellySlab', sans-serif;
+}
+
+.timeCard {
+    width: 39px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: var(--contrast);
+    border-radius: 6px;
+    border: 1px solid var(--contrast);
+    background: transparent;
+}
+
+.timeLabel {
+    margin-top: 8px;
+    color: var(--additional-gray);
+    font-size: 20px;
+}
+
+.timeSeparator {
+    height: 84px;
+    font-size: 44px;
+    color: var(--additional-gray);
+}
+
+
+@media (max-width: 768px) {
+    .roulette {
+        width: 100%;
+    }
+}

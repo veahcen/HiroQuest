@@ -1,0 +1,40 @@
+.winModal {
+    position: fixed;
+    z-index: 2;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.winModal__content {
+    max-width: 343px;
+    padding: 32px 16px;
+    background-color: var(--fill);
+    border-radius: 28px;
+}
+
+.winModal__title {
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 44px;
+    font-weight: 600;
+}
+
+.winModal__box {
+    margin-bottom: 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    font-family: 'KellySlab', sans-serif;
+}
+
+.winModal__text {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}

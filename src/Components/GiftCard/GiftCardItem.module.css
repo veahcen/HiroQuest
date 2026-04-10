@@ -1,0 +1,27 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--additional-gray);
+    border-radius: 16px;
+    font-family: 'AlumniSansSemiBold', sans-serif;
+    font-size: 24px;
+    color: var(--additional-gray);
+}
+
+.card__red {
+    border: 1px solid var(--accent-color);
+}
+
+.card__header {
+    display: inline-block;
+    text-align: center;
+    padding: 8px 7px 0 7px;
+    text-transform: uppercase;
+}
+
+.card__footer {
+    display: inline-block;
+    text-align: center;
+    padding: 0 7px 8px 7px;
+    font-family: 'KellySlab', sans-serif;
+}

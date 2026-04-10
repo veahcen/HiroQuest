@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'AlumniSansRegular';
+    src: url('../assets/fonts/AlumniSans-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AlumniSansRegular';
+    src: url('../assets/fonts/AlumniSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AlumniSansSemiBold';
+    src: url('../assets/fonts/AlumniSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AlumniSansSemiBold';
+    src: url('../assets/fonts/AlumniSans-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KellySlab';
+    src: url('../assets/fonts/KellySlab-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KellySlab';
+    src: url('../assets/fonts/KellySlab-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}

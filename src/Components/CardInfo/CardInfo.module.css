@@ -1,0 +1,58 @@
+.article {
+    position: relative;
+    padding: 28px 24px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.articleWhite {
+    background-color: var(--contrast);
+}
+
+.articleBlack {
+    border: 1px solid var(--additional-gray2);
+    border-radius: 16px;
+}
+
+.availability {
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    padding: 2px 8px;
+    text-transform: uppercase;
+    box-shadow: 0 5px 14px var(--fill);
+}
+
+.availabilityYes {
+    color: var(--contrast);
+    background-color: var(--accent-color);
+}
+
+.availabilityNo {
+    color: var(--fill);
+    background-color: var(--contrast);
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.titleWhite {
+    color: var(--fill);
+}
+
+.titleBlack {
+    color: var(--contrast);
+}
+
+.descriptionWhite {
+    color: var(--additional-gray2);
+}
+
+.descriptionBlack  {
+    color: var(--additional-gray);
+}
