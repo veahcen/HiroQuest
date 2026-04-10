@@ -49,7 +49,7 @@ const Roulette = () => {
   const [timeLeft, setTimeLeft] = useState<null | number>(null);
   const [spinning, setSpinning] = useState(false);
   const [disabled, setDisabled] = useState<boolean>(false);
-  const [daysOffset, setDaysOffset] = useState<number>(6);
+  const [daysOffset, setDaysOffset] = useState<number>(1);
   const [open, setOpen] = useState<boolean>(false);
   const [random , setRandom] = useState<number>(0);
 
