@@ -155,3 +155,12 @@
         width: 100%;
     }
 }
+
+@media (max-width: 410px) {
+    .roulette {
+        width: 100%;
+    }
+    .timeCard {
+        width: 30px;
+    }
+}
