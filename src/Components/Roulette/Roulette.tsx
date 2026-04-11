@@ -85,7 +85,6 @@ const Roulette = () => {
         setTimeLeft(null);
         localStorage.removeItem("slotCooldown");
         if(daysOffset === 7) {
-          setRandom(11)
           setDaysOffset(1)
         } else {setDaysOffset(day => day+1)}
         setOffset(0);
@@ -107,7 +106,7 @@ const Roulette = () => {
 
     setSpinning(true);
 
-    const rand = Math.floor(Math.random() * GiftCards.length);
+    const rand = daysOffset === 7 ? 11 : Math.floor(Math.random() * GiftCards.length);
     const target = GiftCards.length * 3 + rand;
 
     const newOffset = -(target * (W + G) - (W + G));
