@@ -66,7 +66,10 @@ const Roulette = () => {
       const saved = localStorage.getItem("slotCooldown");
       if (saved) {
         const end = parseInt(saved);
-        if (end > Date.now()) return end;
+        if (end > Date.now()) {
+          setDisabled(true);
+          return end;
+        }
         localStorage.removeItem("slotCooldown");
       }
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
